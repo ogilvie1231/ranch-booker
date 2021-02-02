@@ -1,25 +1,54 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
+// import React, {Component} from 'react'
+import logo from './zion.png'
 import './App.css';
+import NavBar from './components/Navbar/navbar'
+import { Component } from 'react'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+      <header>
+        <NavBar />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+  
+        <img className="mainLogo" src={logo} alt="Zion Ponderosa Logo" srcset="">
+  
+        </img>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
-    </div>
-  );
+          
+          <p className="header container">
+           Hello World
+          </p>
+          
+  
+      </div>
+    );
+  }
 }
+
+// function App() {
+//   return (
+//     <div className="App">
+//     <header>
+//       <p>
+
+//       <img className="mainLogo" src={logo} alt="Zion Ponderosa Logo" srcset="">
+
+//       </img>
+//       </p>
+//     </header>
+        
+//         <p className="header container">
+//          Hello World
+//         </p>
+        
+
+//     </div>
+//   );
+// }
 
 export default App;
